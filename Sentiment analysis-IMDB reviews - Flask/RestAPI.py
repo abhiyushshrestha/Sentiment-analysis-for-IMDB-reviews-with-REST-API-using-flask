@@ -14,21 +14,21 @@ app = Flask(__name__)
 
 #pickle of count vectorizer
 
-open_count_vectorizer = open("/home/abhiyush/mPercept/Natural Language Processing/Sentiment Analysis/IMDB reviews/spyder/count_vectorizer_spyder.pickle", "rb")
+open_count_vectorizer = open("/home/abhiyush/mPercept/Natural Language Processing/Sentiment Analysis/IMDB reviews/spyder/models/count_vectorizer_spyder.pickle", "rb")
 cv = pickle.load(open_count_vectorizer)
 open_count_vectorizer.close()
 
-open_classifier = open("/home/abhiyush/mPercept/Natural Language Processing/Sentiment Analysis/IMDB reviews/spyder/naive_bayes_classifier.pickle", "rb")
+open_classifier = open("/home/abhiyush/mPercept/Natural Language Processing/Sentiment Analysis/IMDB reviews/spyder/models/naive_bayes_classifier.pickle", "rb")
 classifier = pickle.load(open_classifier)
 open_classifier.close()
 
 #pickle of tfidf vectorizer
 
-open_tfidf_vectorizer = open("/home/abhiyush/mPercept/Natural Language Processing/Sentiment Analysis/IMDB reviews/spyder/tfidf_vectorizer.pickle", "rb")
+open_tfidf_vectorizer = open("/home/abhiyush/mPercept/Natural Language Processing/Sentiment Analysis/IMDB reviews/spyder/models/tfidf_vectorizer.pickle", "rb")
 tfidf_vectorizer = pickle.load(open_tfidf_vectorizer)
 open_tfidf_vectorizer.close()
 
-open_classifier_tfidf = open("/home/abhiyush/mPercept/Natural Language Processing/Sentiment Analysis/IMDB reviews/spyder/naive_bayes_classifier.pickle_tfidf", "rb")
+open_classifier_tfidf = open("/home/abhiyush/mPercept/Natural Language Processing/Sentiment Analysis/IMDB reviews/spyder/models/naive_bayes_classifier.pickle_tfidf", "rb")
 classifier_tfidf = pickle.load(open_classifier_tfidf)
 open_classifier_tfidf.close()
 
